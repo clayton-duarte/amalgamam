@@ -1,0 +1,17 @@
+{
+  "name": "amalg",
+  "private": true,
+  "scripts": {
+    "start": "npm run start:client",
+    "start:server": "cd packages/server && npm start",
+    "start:client": "cd packages/client && npm start",
+    "start:web": "cd packages/web && npm start",
+    "build": "lerna run build --parallel",
+    "test": "lerna run test --parallel",
+    "dev": "lerna run dev --parallel",
+    "install": "lerna exec -- npm install && lerna run bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.1"
+  }
+}

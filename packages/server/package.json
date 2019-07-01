@@ -1,0 +1,19 @@
+{
+  "name": "amalg-server",
+  "version": "0.0.1",
+  "description": "Simplest chat server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "mocha"
+  },
+  "author": "clayton-duarte",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}

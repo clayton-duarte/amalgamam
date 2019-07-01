@@ -1,0 +1,21 @@
+{
+  "name": "amalg-client",
+  "version": "0.0.1",
+  "description": "Simplest cli chat client",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node index.js",
+    "test": "mocha"
+  },
+  "author": "clayton-duarte",
+  "license": "MIT",
+  "dependencies": {
+    "cryptr": "^4.0.2",
+    "socket.io-client": "^2.2.0",
+    "terminal-kit": "^1.28.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
