@@ -1,9 +1,9 @@
-import React from 'react';
-import App, { Container } from 'next/app';
+import React from "react";
+import App, { Container } from "next/app";
 
-import { StateProvider } from '../state';
-import Header from '../components/Header';
-import reducer from '../state/reducer';
+import { StateProvider } from "../state";
+import Header from "../components/Header";
+import reducer from "../state/reducer";
 
 export default class extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -27,7 +27,7 @@ export default class extends App {
             <Component {...pageProps} />
           </>
         </Container>
-     </StateProvider>
-    )
+      </StateProvider>
+    );
   }
 }

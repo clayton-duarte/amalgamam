@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import events from '../helpers/events-enum';
-import colors from '../helpers/colors-enum';
+import events from "../helpers/events-enum";
+import colors from "../helpers/colors-enum";
 
 function setColor(event) {
   switch (event) {
@@ -27,6 +27,6 @@ const Message = ({ event, text, user }) => (
       }
     `}</style>
   </>
-)
+);
 
 export default Message;

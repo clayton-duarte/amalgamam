@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import colors from '../helpers/colors-enum';
-import { useStateValue } from '../state';
+import colors from "../helpers/colors-enum";
+import { useStateValue } from "../state";
 
 const Header = () => {
   const [{ user, secret }] = useStateValue();
 
   return (
     <>
-      <h1>{user} ⨿ {secret}</h1>
+      <h1>
+        {user} ⨿ {secret}
+      </h1>
       <style jsx global>{`
         body {
           background: ${colors.black};
@@ -21,6 +23,6 @@ const Header = () => {
       `}</style>
     </>
   );
-}
+};
 
 export default Header;

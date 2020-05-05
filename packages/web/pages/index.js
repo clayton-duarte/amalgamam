@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { useStateValue } from '../state';
-import Form from '../components/Form';
-import Chat from '../components/Chat';
+import { useStateValue } from "../state";
+import Form from "../components/Form";
+import Chat from "../components/Chat";
 
 const Home = () => {
   const [{ user, secret, socket }, dispatch] = useStateValue();

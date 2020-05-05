@@ -1,4 +1,4 @@
-import events from './events-enum';
+import events from "./events-enum";
 
 function formatMessage({ event, payload }, myself) {
   let data = { event };
@@ -21,7 +21,7 @@ function formatMessage({ event, payload }, myself) {
       data.text = `${payload.user} disconnected`;
       break;
     case events.connect_error:
-      data.text = 'looking for the server...';
+      data.text = "looking for the server...";
       break;
   }
   return data;
@@ -30,6 +30,6 @@ function formatMessage({ event, payload }, myself) {
 export default function updateMessages({ messages, user }, action) {
   let newMessages = messages;
   newMessages.push(formatMessage(action, user));
-  window.scrollTo(0,document.body.scrollHeight);
+  window.scrollTo(0, document.body.scrollHeight);
   return newMessages;
 }

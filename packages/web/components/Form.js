@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { string } from 'prop-types';
+import React, { useState } from "react";
+import { string } from "prop-types";
 
-import { useStateValue } from '../state';
-import Input from '../components/Input';
+import { useStateValue } from "../state";
+import Input from "../components/Input";
 
 const Form = ({ store, label }) => {
   const [, dispatch] = useStateValue();
@@ -11,13 +11,13 @@ const Form = ({ store, label }) => {
   function handleChange(e) {
     const { value } = e.target;
     setState({ value });
-  };
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
     dispatch({ type: `set_${store}`, payload: value });
-    setState({ value: '' });
-  };
+    setState({ value: "" });
+  }
 
   return (
     <form onSubmit={handleSubmit}>

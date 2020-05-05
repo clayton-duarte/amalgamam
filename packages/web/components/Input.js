@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import colors from '../helpers/colors-enum';
+import colors from "../helpers/colors-enum";
 
 const Input = (props) => {
   return (
@@ -17,6 +17,6 @@ const Input = (props) => {
       `}</style>
     </>
   );
-}
+};
 
 export default Input;
