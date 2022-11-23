@@ -11,7 +11,7 @@
   "author": "clayton-duarte",
   "license": "MIT",
   "dependencies": {
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.5.0"
   },
   "devDependencies": {
     "mocha": "^6.1.4"
