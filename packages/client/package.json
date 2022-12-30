@@ -16,6 +16,6 @@
     "terminal-kit": "^1.28.1"
   },
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   }
 }
